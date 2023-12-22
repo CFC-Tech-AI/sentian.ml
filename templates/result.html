@@ -5,40 +5,62 @@
     <title>Sentiment Result</title>
     <style>
         body {
-            font-family: 'Arial', sans-serif;
-            background-color: #f4f4f4;
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+            background-color: #ffebcd; /* NavajoWhite - because why not */
             margin: 0;
             padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            
         }
 
         header {
-            background-color: #333;
+            background-color: #8b0000; /* DarkRed - making a statement */
             color: #fff;
-            padding: 10px;
+            padding: 20px;
             text-align: center;
+            font-size: 2rem;
+            width: 100%;
         }
 
         main {
             max-width: 600px;
             margin: 20px auto;
             padding: 20px;
-            background-color: #fff;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            text-align: center; /* Center the content */
+            background-color: #ffe4e1; /* MistyRose - a hint of elegance */
+            border-radius: 20px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+            text-align: center; /* Center the form */
         }
 
-        h2, h3 {
-            color: #333;
+        h2 {
+            margin-bottom: 20px;
+            font-size: 1.5rem;
+            color: #8b4513; /* SaddleBrown - for that rustic touch */
+        }
+
+        h3 {
+            font-size: 1.2rem;
+            color: #8b4513;
         }
 
         a {
-            color: #007BFF;
+            display: inline-block;
+            background-color: #8b0000; /* DarkRed - because it stands out */
+            color: #fff;
             text-decoration: none;
+            padding: 12px 24px;
+            border-radius: 10px;
+            cursor: pointer;
+            font-size: 1.4rem;
+            margin-top: 20px;
+            transition: background-color 0.3s ease;
         }
 
         a:hover {
-            text-decoration: underline;
+            background-color: #800000; /* Maroon - a darker twist */
         }
     </style>
 </head>
@@ -50,9 +72,8 @@
 
     <main>
         <h2>Text: {{ text }}</h2>
-        <h3>Sentiment is going to be :- {{ sentiment }}</h3>
+        <h3>Sentiment is going to be: {{ sentiment }}</h3>
         <a href="{% url 'index' %}">Check Another</a>
     </main>
 </body>
 </html>
-
