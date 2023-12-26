@@ -1,7 +1,4 @@
 requests
 Django
-transformers
-imageio
-gtts
 nltk
 
