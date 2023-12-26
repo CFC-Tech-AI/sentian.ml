@@ -1,4 +1,5 @@
 import nltk
+nltk.download('punkt')
 from nltk.sentiment.vader import SentimentIntensityAnalyzer
 
 nltk.download('punkt')
